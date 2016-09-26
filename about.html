@@ -3,18 +3,18 @@
 <head>
 	<meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>JNU_IS&SE</title>
  	<!-- CSS Files -->
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
-
+	<link rel="stylesheet" href="css/font-awesome.css" />
 	<!-- End CSS Files -->
 </head>
 <body>
 	<!-- JavaScript Files -->
-	
+
 	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/jquery.sticky.js"></script>
@@ -22,19 +22,13 @@
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script type="text/javascript" src="js/CountVisitor.js"></script>
 
-	<script type="text/javascript">
-		$('#btn').click(function(){
-			$('#upload').click();
-		});
-	</script>
-
 	 <!-- End JavaScript Files -->
-<div id="pageloader">   
+<div id="pageloader">
     <div class="loader">
         <img src="images/load.gif" alt='loader' />
-    </div>    
+    </div>
 </div>
-	
+
 <!-- Navigation Section -->
 <section id="navigation">
 	<div class="inner navigation">
@@ -45,9 +39,9 @@
 	<!-- Nav Menu -->
 	<nav class="nav-menu">
 		<ul class="nav main-nav">
-			<li class="active"><a href="index.html">首页</a></li>
+			<li><a href="index.html">首页</a></li>
             <li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
-            <li><a href="about.html">关于</a></li>
+            <li class="active"><a href="about.html">关于</a></li>
             <li><a href="team.html">鸣谢</a></li>
             <li><a href="contact.html">反馈</a></li>
 		</ul>
@@ -67,41 +61,62 @@
 </section>
 <!-- End Navigation Section -->
 
-<!-- Index Section -->
+<!-- About Section -->
 <section id="about" class="contain nav-link">
 	<div class="about inner">
 		<div class="header">
-			作业提交
+			关于
 		</div>
-	<!-- Second Header -->
+		<!-- Second Header -->
 		<div class="description">
-			本次实验为:链表的四个操作。截止时间为 9.28星期三
+			本站基于米利坚和众国法律,为全球华人服务
 		</div>
 		<div class="row">
 			<div class="col-lg-4 col-md-4">
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<input class="button-ready" id='chose_file' name="file" type="file" style="padding: auto 20px;" />
 				<div class="bubble_outer_one">
 					<div class="bubble_container">
 						<div class="bubble"></div>
-						<a id='btn' href="javascript:void(0);"><img src="images/upload.svg" alt="上传文件"/></a>						
-						<input id='upload' name="upload" type="submit" style="display: none;">
+						<a href="javascript:;"><i class="fa fa-thumbs-up"></i></a>
 					</div>
 				</div>
 				<div class="about_line"></div>
 				<article class='about_article'>
-					<h2>上传</h2>
-					<p>作业提交格式是"学号+名字+本次实验名",提交格式限定为doc,docx,rar,7z,zip</p>
+					<h2>点赞</h2>
+					<p>爱点不点</p>
 				</article>
 			</div>
 			<div class="col-lg-4 col-md-4">
+				<div class="bubble_outer_two">
+					<div class="bubble_container">
+						<div class="bubble"></div>
+						<a><i class="fa fa-rmb"></i></a>
+					</div>
+				</div>
+				<div class="about_line"></div>
+				<article class='about_article'>
+					<h2>资瓷</h2>
+					<p>支付宝就好</p>
+				</article>
+			</div>
+			<div class="col-lg-4 col-md-4">
+				<div class="bubble_outer_three">
+					<div class="bubble_container">
+						<div class="bubble"></div>
+						<a href="https://github.com/Vanyoung" target="_blank"><i class="fa fa-github"></i></a>
+					</div>
+				</div>
+				<div class="about_line"></div>
+				<article class='about_article'>
+					<h2>Github</h2>
+					<p>本网站源码已上传到Github<a href="https://github.com/Vanyoung/JNU_IS-SE_officialwebsite" target="_blank"><br>github.com/Vanyoung/JNU_IS-SE_officialwebsite</a></p>
+				</article>
 			</div>
 		</div>
 		<div class="clear"></div>
 	</div>
 </section>
-<!-- End Index Section -->
+<!-- End About Section -->
+
 <!-- Footer Section -->
 <section id="footer">
 	<div class="inner footer">
@@ -114,10 +129,9 @@
 		</p>
 	</div>
 	<div class="clear"></div>
-	<!-- End Footer inner -->	
+	<!-- End Footer inner -->
 </section>
 <!-- End Footer Section -->
-
 
 </body>
 </html>

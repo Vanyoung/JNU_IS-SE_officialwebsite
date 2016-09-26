@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
-
+	<link rel="stylesheet" href="css/font-awesome.css" />
 	<!-- End CSS Files -->
 </head>
 <body>
@@ -22,13 +22,8 @@
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script type="text/javascript" src="js/CountVisitor.js"></script>
 
-	<script type="text/javascript">
-		$('#btn').click(function(){
-			$('#upload').click();
-		});
-	</script>
-
 	 <!-- End JavaScript Files -->
+
 <div id="pageloader">   
     <div class="loader">
         <img src="images/load.gif" alt='loader' />
@@ -45,11 +40,11 @@
 	<!-- Nav Menu -->
 	<nav class="nav-menu">
 		<ul class="nav main-nav">
-			<li class="active"><a href="index.html">首页</a></li>
+			<li><a href="index.html">首页</a></li>
             <li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
             <li><a href="about.html">关于</a></li>
             <li><a href="team.html">鸣谢</a></li>
-            <li><a href="contact.html">反馈</a></li>
+            <li class="active"><a href="contact.html">反馈</a></li>
 		</ul>
 	</nav>
 	<!-- Dropdown Menu For Mobile Devices-->
@@ -66,42 +61,51 @@
 	</div>
 </section>
 <!-- End Navigation Section -->
-
-<!-- Index Section -->
-<section id="about" class="contain nav-link">
-	<div class="about inner">
-		<div class="header">
-			作业提交
+<!--Start Contact Section -->
+<section id="contact" class="contain nav-link">
+    <!-- Header -->
+    <div class="header">
+        反馈
+    </div>
+    <!-- Second Header -->
+    <div class="description">
+        如果您在使用的过程中遇到疑问，或者有任何的意见和建议，欢迎随时向我们反馈
+    </div>
+    <!-- col-md-8 col-sm-8 col-xs-12 -->
+    <div class="col-md-8 col-sm-8 col-xs-12">
+        <div class="contact-form">
+            <form id="contact-form" action="contact.php" method="post" class="contact-form1">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input name="name" type="text" placeholder="您的称呼" required />
+                    </div>
+                    <div class="col-sm-6">
+                        <input name="email" type="email" placeholder="您的邮箱地址" required />
+                    </div>
+                </div>
+                <textarea name="message" rows="8" cols="40" placeholder="您想说的" required /></textarea>
+ 				<input name="send" class="btn-c" type="submit" value="发送" />
+			</form>
+    	<div id="response"></div>
 		</div>
-	<!-- Second Header -->
-		<div class="description">
-			本次实验为:链表的四个操作。截止时间为 9.28星期三
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-4">
-			</div>
-			<div class="col-lg-4 col-md-4">
-				<input class="button-ready" id='chose_file' name="file" type="file" style="padding: auto 20px;" />
-				<div class="bubble_outer_one">
-					<div class="bubble_container">
-						<div class="bubble"></div>
-						<a id='btn' href="javascript:void(0);"><img src="images/upload.svg" alt="上传文件"/></a>						
-						<input id='upload' name="upload" type="submit" style="display: none;">
-					</div>
-				</div>
-				<div class="about_line"></div>
-				<article class='about_article'>
-					<h2>上传</h2>
-					<p>作业提交格式是"学号+名字+本次实验名",提交格式限定为doc,docx,rar,7z,zip</p>
-				</article>
-			</div>
-			<div class="col-lg-4 col-md-4">
-			</div>
-		</div>
-		<div class="clear"></div>
-	</div>
+    </div>
+    <!-- /col-md-8 col-sm-8 col-xs-12 -->
+    <!-- /col-md-4 col-sm-4 col-xs-12 -->
+    <div class="col-md-4 col-sm-4 col-xs-12">
+        <div class="contact-widget">
+			<i class="fa fa-envelope"></i>
+            <p>李文灏：835904198lwh@gmail.com</p>
+            <div class="clearfix"></div>
+            <i class="fa fa-envelope"></i>
+			<p>乃逸夫：lylvanyoung@gmail.com</p>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+   <!-- /col-md-4 col-sm-4 col-xs-12 -->
+    <div class="clear"></div>
 </section>
-<!-- End Index Section -->
+<!-- End Contact Section -->
+
 <!-- Footer Section -->
 <section id="footer">
 	<div class="inner footer">
@@ -117,7 +121,6 @@
 	<!-- End Footer inner -->	
 </section>
 <!-- End Footer Section -->
-
 
 </body>
 </html>

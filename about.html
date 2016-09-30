@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>JNU_IS&SE</title>
  	<!-- CSS Files -->
-	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/font-awesome.css" />
@@ -15,8 +15,9 @@
 <body>
 	<!-- JavaScript Files -->
 
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/modernizr-latest.js"></script>
 	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
@@ -31,33 +32,33 @@
 
 <!-- Navigation Section -->
 <section id="navigation">
-	<div class="inner navigation">
-	<!-- Logo -->
-		<div class="logo">
-			<p><span>JNU&nbsp;</span>IS&SE&nbsp;<span style="color:#757575;font-size: 16px;font-weight: 400;">2015</span></p>
-		</div>
-	<!-- Nav Menu -->
-	<nav class="nav-menu">
-		<ul class="nav main-nav">
-			<li><a href="index.html">首页</a></li>
+    <div class="inner navigation">
+    <!-- Logo -->
+        <div class="logo">
+            <p><span>JNU&nbsp;</span>IS&SE&nbsp;<span style="color:#757575;font-size: 16px;font-weight: 400;">2015</span></p>
+        </div>
+    <!-- Nav Menu -->
+    <nav class="nav-menu">
+        <ul class="nav main-nav">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="platform.html">平台</a></li>
             <li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
             <li class="active"><a href="about.html">关于</a></li>
-            <li><a href="team.html">鸣谢</a></li>
             <li><a href="contact.html">反馈</a></li>
-		</ul>
-	</nav>
-	<!-- Dropdown Menu For Mobile Devices-->
-	<nav class="dropdown mobile-drop">
-	    <a data-toggle="dropdown" class="mobile-menu" href="#"><img src="images/cell.svg" alt="" width="20" height="20"></a>
-		    <ul class="nav dropdown-menu fullwidth" role="menu">
-				<li class="active"><a href="index.html">首页</a></li>
-				<li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
-                <li><a href="about.html">关于</a></li>
-                <li><a href="team.html">鸣谢</a></li>
+        </ul>
+    </nav>
+    <!-- Dropdown Menu For Mobile Devices-->
+    <nav class="dropdown mobile-drop">
+        <a data-toggle="dropdown" class="mobile-menu" href="#"><img src="images/cell.svg" alt="" width="20" height="20"></a>
+            <ul class="nav dropdown-menu fullwidth" role="menu">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="platform.html">平台</a></li>
+                <li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
+                <li class="active"><a href="about.html">关于</a></li>               
                 <li><a href="contact.html">反馈</a></li>
-			</ul>
-	</nav>
-	</div>
+            </ul>
+    </nav>
+    </div>
 </section>
 <!-- End Navigation Section -->
 
@@ -98,6 +99,7 @@
 					<p>支付宝就好</p>
 				</article>
 			</div>
+			
 			<div class="col-lg-4 col-md-4">
 				<div class="bubble_outer_three">
 					<div class="bubble_container">
@@ -114,6 +116,56 @@
 		</div>
 		<div class="clear"></div>
 	</div>
+	<!-- Start Our Team Section -->
+<div class="second-section">
+    <!-- Header -->
+    <div class="header">
+        团队
+    </div>
+    <!-- Second Header -->
+    <div class="description ">
+        <p>本站由以下人员提供技术支持</p>
+    </div>
+    <div class="row">
+        <ul class="grid cs-style-1">
+
+            <li class="col-md-3 col-sm-6">
+              
+            </li>
+
+            <li class="col-md-3 col-sm-6">
+                <div class="figure">
+                    <img src="images/team/1.jpg" alt="MyPassion" />
+                    <div class="figcaption">
+                        <span>文件上传/服务器处理</span>
+                        <p>学习委员</p>
+                    </div>
+                    <h4>李文灏</h4>
+
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6">
+                 <div class="figure">
+                    <img src="images/team/1.jpg" alt="MyPassion" />
+                    <div class="figcaption">
+                        <span>前端工程/页面交互/维护</span>
+                        <p>这家伙很懒，什么也没有留下</p>
+                        <a href="https://github.com/Vanyoung/" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://vanyoung.github.io/CV/cv_zh.html" target="_blank"><i class="fa fa-user"></i></a>
+                    </div>
+                    <h4>乃逸夫</h4>
+
+                </div>
+            </li>
+            <li class="col-md-3 col-sm-6">
+            </li>
+
+        </ul>
+    </div>
+</div>
+<!-- End inner div -->
+<!-- End Our Team Section -->
+
 </section>
 <!-- End About Section -->
 

@@ -7,7 +7,7 @@ Content:
 
  1 - General
  2 - Index
- 3 - Protfolio
+ 3 - Platform
  4 - About
  5 - Team
  6 - Blog
@@ -362,10 +362,10 @@ a.mobile-menu{
 }
 
 /*===================================================================================*/
-/*  								3 - Protfolios                                   */
+/*  								3 - Platform                                   */
 /*===================================================================================*/
 
-#protfolio{
+#platform{
 	font-weight:300;
 	font-family: "Microsoft YaHei";
 }
@@ -444,26 +444,26 @@ a.mobile-menu{
 	overflow:hidden;
 }
 
-.protfolio-inner{
+.platform-inner{
 	border:1px solid #ebebeb;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
 }
 
-.protfolio-img{
+.platform-img{
 	width:100%;
 	position:relative;
 	overflow:hidden;
 }
 
-.protfolio-img img{
+.platform-img img{
 	width:100%;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
 }
 
-.protfolio-desc{
+.platform-desc{
 	width:100%;
 	background:white;
 	margin:0;
@@ -471,18 +471,18 @@ a.mobile-menu{
 	padding:15px 5px;
 }
 
-.protfolio-desc h4{
+.platform h4{
 	text-transform:uppercase;
 	font-size:20px;
 	margin:0;
 }
 
-.protfolio-desc p{
+.platform-desc p{
 	font-size:15px;
 	margin:0;
 }
 
-.protfolio-img .button{
+.platform-img .button{
 	width:42px;
 	height:42px;
 	display:block;
@@ -497,38 +497,38 @@ a.mobile-menu{
 	transition: all 0.3s;
 }
 
-.protfolio-img .button:hover{
+.platform-img .button:hover{
 	background:#ffa300;
 	color:white;
 }
 
-.protfolio-img .zoom{
+.platform-img .zoom{
 	left:37%;
 	top:20%;
 	opacity:0;
 }
 
-.protfolio-img .detail{
+.platform-img .detail{
 	right:37%;
 	bottom:20%;
 	opacity:0;
 }
 
-.work:hover .protfolio-img img{
+.work:hover .platform-img img{
 	opacity:0.8;
 	transform: scale(1.33);
 	-ms-transform: scale(1.33);
 	-webkit-transform: scale(1.33);
 }
 
-.work:hover .protfolio-img .zoom{
+.work:hover .platform-img .zoom{
 	top:50%;
 	opacity:1;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);
 	transform: translateY(-50%);
 }
-.work:hover .protfolio-img .detail{
+.work:hover .platform-img .detail{
 	bottom:50%;
 	opacity:1;
 	-webkit-transform: translateY(50%);
@@ -1119,8 +1119,6 @@ section#team{
 	color:#FFF;
 	margin-bottom:10px;
 	width: 320px;
-	position: relative;
-	top: 7px;
 }
 
 

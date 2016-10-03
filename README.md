@@ -7,15 +7,19 @@
 ### Index
 - Put out the homework requirements
 - The upload button
+
 ### Platform
 - Links to a number of security and development learning platforms
+
 ### About
 - Like：Click like to encourage us（Undeveloped）
 - Support：Donate us with money（Undeveloped）
 - The Github link：Provide this site's repository link
 - Developers' information
+
 ### Contact
 - Write a feedback message to the manager
+
 ### Undeveloped
 - To be questionable
 
@@ -28,15 +32,19 @@
 ### 主页
 - 发布作业内容
 - 上传作业通道
+
 ### 平台
 - 链接一些安全和开发学习平台
+
 ### 关于
 - 点赞：喜欢网站的点赞（未开放）
 - 支持：向我们捐款（未开放）
 - Github链接：提供该仓库链接
 - 开发人员资料
+
 ### 反馈
 - 写反馈邮件发送到管理者（未开放）
+
 ### 未开放
 - 待商榷
 

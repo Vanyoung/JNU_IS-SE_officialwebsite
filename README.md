@@ -5,7 +5,7 @@
 
 ## The navigation
 ### Index
-- Put out the homework requirements
+- Put up the homework requirements
 - The upload button
 
 ### Platform

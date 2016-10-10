@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en/zh">
+<html lang="en">
 <head>
 	<meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
@@ -11,113 +11,143 @@
 	<link rel="stylesheet" href="css/responsive.css" />
 	<link rel="stylesheet" href="css/font-awesome.css" />
 	<!-- End CSS Files -->
+
 </head>
 <body>
 	<!-- JavaScript Files -->
-	
     <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/jquery.sticky.js"></script>
 	<script type="text/javascript" src="js/jquery.isotope.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 	<script type="text/javascript" src="js/CountVisitor.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
 	<script type="text/javascript">
-		$('#btn').click(function(){
+		$('#btn').click(function()){
 			$('#upload').click();
 		});
 	</script>
 
-	 <!-- End JavaScript Files -->
-<div id="pageloader">   
-    <div class="loader">
-        <img src="images/load.gif" alt='loader' />
-    </div>    
+<!-- End JavaScript Files -->
+<div id="pageloader">
+	<div class="loader">
+		<img src="images/load.gif" alt='loader' />
+	</div>
 </div>
-	
+
 <!-- Navigation Section -->
 <section id="navigation">
-    <div class="inner navigation">
-    <!-- Logo -->
-        <div class="logo">
-            <p><span>JNU&nbsp;</span>IS&SE&nbsp;<span style="color:#757575;font-size: 16px;font-weight: 400;">2015</span></p>
-        </div>
-    <!-- Nav Menu -->
-    <nav class="nav-menu">
-        <ul class="nav main-nav">
-            <li class="active"><a href="index.html">首页</a></li>
-            <li><a href="platform.html">平台</a></li>
-            <li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">反馈</a></li>
-        </ul>
-    </nav>
-    <!-- Dropdown Menu For Mobile Devices-->
-    <nav class="dropdown mobile-drop">
-        <a data-toggle="dropdown" class="mobile-menu" href="#"><img src="images/cell.svg" alt="" width="20" height="20"></a>
-            <ul class="nav dropdown-menu fullwidth" role="menu">
-                <li class="active"><a href="index.html">首页</a></li>
-                <li><a href="platform.html">平台</a></li>
-                <li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
-                <li><a href="about.html">关于</a></li>               
-                <li><a href="contact.html">反馈</a></li>
-            </ul>
-    </nav>
-    </div>
+	<div class="inner navigation">
+		<!-- Logo -->
+		<div class="logo">
+			<p><span>JNU&nbsp;</span>IS&SE&nbsp;<span style="color:#757575;font-size: 16px;font-weight: 400;">2015</span></p>
+		</div>
+		<!-- Nav Menu -->
+		<nav class="nav-menu">
+			<ul class="nav main-nav">
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="platform.html">平台</a></li>
+				<li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="contact.html">反馈</a></li>
+			</ul>
+		</nav>
+		<!-- Dropdown Menu For Mobile Devices-->
+		<nav class="dropdown mobile-drop">
+			<a data-toggle="dropdown" class="mobile-menu" href="#"><img src="images/cell.svg" alt="" width="20" height="20"></a>
+			<ul class="nav dropdown-menu fullwidth" role="menu">
+				<li class="active"><a href="index.html">首页</a></li>
+				<li><a href="platform.html">平台</a></li>
+				<li><a href="#protfolio" style="color:rgb(204,204,204);">未开发</a></li>
+				<li><a href="about.html">关于</a></li>
+				<li><a href="contact.html">反馈</a></li>
+			</ul>
+		</nav>
+	</div>
 </section>
 <!-- End Navigation Section -->
-
 <!-- Index Section -->
 <section id="index" class="contain nav-link">
 	<div class="about inner">
 		<div class="header">
-			作业提交
+			Homework
 		</div>
-	<!-- Second Header -->
+		<!-- Second Header -->
 		<div class="description">
-			本次实验为:链表的四个操作。截止时间为 9.28星期三
-		</div>
-		<div class="row">
-			<div class="col-lg-4 col-md-4">
+			本次实验为:栈的四个操作。截止时间为 10.12星期三<br>
+			<div id="CountMsg">
+				距离截止还有：<br>
+				<span style="color:rgb(39,38,54);font-size:28px;font-weight:400;">
+					<span id="t_d">00天</span>
+					<span id="t_h">00时</span>
+					<span id="t_m">00分</span>
+					<span id="t_s">00秒</span>
+				</span>
 			</div>
-			<div class="col-lg-4 col-md-4">
-				<input class="button-ready" id='chose_file' name="file" type="file" style="padding: auto 20px;" />
-				<div class="bubble_outer_one">
-					<div class="bubble_container">
-						<div class="bubble"></div>
-						<a id='btn' href="javascript:void(0);"><img src="images/upload.svg" alt="上传文件"/></a>
-						<input id='upload' name="upload" type="submit" style="display: none;">
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<form action="upload_1.php" method="POST" enctype="multipart/form-data">
+					<input class="button-ready" id='chose_file' name="file" type="file" style="padding: auto 10px;" />
+					<div class="bubble_outer_one">
+						<div class="bubble_container">
+							<div class="bubble"></div>
+							<a id='btn' href="javascript:void(0);" ><img src="images/upload.svg" alt="上传文件"/></a>
+							<input id='upload' name="upload" type="submit" style="position:absolute;top:1px;font-size:3em;height:4em;opacity:0">
+						</div>
 					</div>
-				</div>
+				</form>
 				<div class="about_line"></div>
 				<article class='about_article'>
-					<h2>上传</h2>
+					<h2>数字逻辑实验</h2>
+					<p>作业提交格式是"学号+名字+本次实验名",提交格式限定为doc,docx</p>
+				</article>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<form action="upload.php" method="POST" enctype="multipart/form-data">
+					<input class="button-ready" id='chose_file' name="file" type="file" style="padding: auto 10px;" />
+					<div class="bubble_outer_two">
+						<div class="bubble_container">
+							<div class="bubble"></div>
+							<a id='btn' href="javascript:void(0);" ><img src="images/upload.svg" alt="上传文件"/></a>
+							<input id='upload' name="upload" type="submit" style="position:absolute;top:1px;font-size:3em;height:4em;opacity:0">
+							
+						</div>
+					</div>
+				</form>
+				<div class="about_line"></div>
+				<article class='about_article'>
+					<h2>数据结构作业</h2>
 					<p>作业提交格式是"学号+名字+本次实验名",提交格式限定为doc,docx,rar,7z,zip</p>
 				</article>
 			</div>
-			<div class="col-lg-4 col-md-4">
-			</div>
+			
+			
 		</div>
 		<div class="clear"></div>
 	</div>
+</div>
 </section>
 <!-- End Index Section -->
-
 <!-- Footer Section -->
 <section id="footer">
-	<div class="inner footer">
-		<p class="footer-text copyright">
-			访问量：
-			<span style="color: #FFA300;">
+<div class="inner footer">
+	<p class="footer-text copyright">
+		访问量：
+		<span style="color: #FFA300;">
 			<script>document.write(visits)</script>
-			</span>
-		</p>
+		</span>
+	</p>
 	<!-- Copyright -->
+	<a href="https://github.com/Vanyoung/JNU_IS-SE_officialwebsite/issues" target="_blank">
 		<p class="footer-text copyright">
 			©2016 乃逸夫, all rights reserved.
 		</p>
-	</div>
-	<div class="clear"></div>
-	<!-- End Footer inner	 -->
+	</a>
+</div>
+<div class="clear"></div>
+<!-- End Footer inner	 -->
 </section>
 <!-- End Footer Section -->
 

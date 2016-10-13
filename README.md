@@ -1,51 +1,33 @@
 # JNU_IS&SE_officialwebsite
-## The main function
-- For the Information Security's and Software Engineering's Study members to facilitate the collection operation
-- Provide some learning platform for the students
+This repository contains the files of JNU_IS&SE_offcialwebsite.
 
-## The navigation
-### Index
-- Put out the homework requirements
-- The upload button
+This website is for students to upload homework and linked some learning platform.
 
-### Platform
-- Links to a number of security and development learning platforms
+Visit [http://jnuis.club/](http://jnuis.club/)
 
-### About
-- Like：Click like to encourage us（Undeveloped）
-- Support：Donate us with money（Undeveloped）
-- The Github link：Provide this site's repository link
-- Developers' information
+## Why the name
+- JNU == JiNan University（Guangdong, China）
+- IS == Information Security major
+- SE == Software Engineering major
 
-### Contact
-- Write a feedback message to the manager
+## Contributing to the website
+**Note:** Major issues or feature requests should be filed on the [issue tracker](https://github.com/Vanyoung/JNU_IS-SE_officialwebsite/issues) first, so we can discuss the implications.
 
-### Undeveloped
-- To be questionable
+If you want to edit a page, the easiest way is to click the ![Edit page on GitHub](https://cloud.githubusercontent.com/assets/1376924/3712375/a6d7bc42-150f-11e4-9ceb-5230cbbfba3f.png) link under the page title on the website.
 
-#暨南大学信息安全及软件工程官方网站
-## 主要功能
-- 为信息安全及软件工程的学委收集作业提供方便
-- 为同学们提供一些学习平台的连接
+This will open the source file on GitHub where you can click the pencil button to start editing:
+![Arrow to pencil](https://cloud.githubusercontent.com/assets/1376924/3712474/1d2fe57a-1517-11e4-86b2-d083dbeaa4ae.png)
 
-## 导航栏
-### 主页
-- 发布作业内容
-- 上传作业通道
+GitHub's editor shows you both the Markdown source as well as a preview of the rendered page
 
-### 平台
-- 链接一些安全和开发学习平台
+After you've finished your changes, enter a proper summary and description and click the "Propose file change" button to open a pull request.
 
-### 关于
-- 点赞：喜欢网站的点赞（未开放）
-- 支持：向我们捐款（未开放）
-- 讨论：在github issues中参与讨论
-- Github链接：提供该仓库链接
-- 开发人员资料
+## Setting up a local copy of the website
+For larger changes, using the web-based editor on GitHub is not really convenient. A better way is to setup a local copy of the website where you can experiment.
 
-### 反馈
-- 写反馈邮件发送到管理者（未开放）
+```
+$ git clone https://github.com/Vanyoung/JNU_IS-SE_officialwebsite
+```
 
-### 未开放
-- 待商榷
-
+## MIT.License
+MIT. See LICENSE file.

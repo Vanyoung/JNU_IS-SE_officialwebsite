@@ -28,6 +28,3 @@ For larger changes, using the web-based editor on GitHub is not really convenien
 ```
 $ git clone https://github.com/Vanyoung/JNU_IS-SE_officialwebsite
 ```
-
-## MIT.License
-MIT. See LICENSE file.
